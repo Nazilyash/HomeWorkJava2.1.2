@@ -1,20 +1,20 @@
 public class Main {
     public static void main(String[] args) {
-        int InitialBalance = 0;
-        int DepositAmount = 1001;
-        int RequiredDepositAmount = 1000;
+        int initialBalance = 0;
+        int depositAmount = 1001;
+        int requiredDepositAmount = 1000;
         int tariff = 100;
         int bonus;
-        if (DepositAmount > RequiredDepositAmount) {
-           bonus = DepositAmount/tariff;
+        if (depositAmount > requiredDepositAmount) {
+           bonus = depositAmount/tariff;
         }else {
             bonus = 0;
         }
-        int FinalBalance = InitialBalance + DepositAmount + bonus;
+        int finalBalance = initialBalance + depositAmount + bonus;
         System.out.println("Итоговый бонус:");
         System.out.println(bonus);
         System.out.println("Итоговая сумма на счете клиента:");
-        System.out.println(FinalBalance);
+        System.out.println(finalBalance);
         System.out.println("Done");
     }
 }
